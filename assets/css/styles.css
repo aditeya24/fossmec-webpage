@@ -476,6 +476,25 @@ section {
     z-index: 1;
 }
 
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+    color: #fff;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover .gallery-caption {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 .gallery-item img {
     width: 100%;
